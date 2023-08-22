@@ -20,7 +20,7 @@ const Todo = () => {
         } else {
             alert("plase add some activity");
         }
-        setHidden("");
+        setHidden("Here is Your Todos");
     };
 
     const removeHandler = (index) => {
@@ -32,6 +32,7 @@ const Todo = () => {
 
     const removeAll = () => {
         setListData([]);
+        setHidden("No todos");
     };
 
     const [hidden, setHidden] = useState("No todos");
@@ -51,10 +52,7 @@ const Todo = () => {
                     Add
                 </button>
             </div>
-            <h3 className={styles.hidden}>{hidden}</h3>
-            {listData.length >= 1 && (
-                <h3 className={styles.todoTitle}>Here is Your Todos</h3>
-            )}
+            <h3 className={styles.todoTitle}>{hidden}</h3>
             {listData != [] &&
                 listData.map((data, index) => {
                     return (
