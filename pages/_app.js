@@ -1,5 +1,11 @@
-import '@/styles/globals.css'
+import Todo from "@/components/Todo";
+import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+    return (
+        <div>
+            <Todo />
+            <Component {...pageProps} />
+        </div>
+    );
 }

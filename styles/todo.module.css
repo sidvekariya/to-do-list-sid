@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    gap: 1rem;
+    background-color: gray;
+    padding: 2rem 0;
+}
+
+.heading {
+    font-size: 3rem;
+}
+
+.inputAndButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input {
+    width: 60%;
+    height: 2rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.inputButton {
+    width: 3rem;
+}
+
+.todoTitle {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.todoData {
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+}
+
+.todos {
+    background-color: rgb(2, 52, 71);
+    width: 100%;
+    height: 2rem;
+    color: white;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.checkbox {
+    height: 2rem;
+    width: 3rem;
+}
+
+.removeButton {
+    width: 5rem;
+    padding: auto;
+}
+
+.removeAll {
+    width: 5rem;
+    height: 2rem;
+    margin-top: 2rem;
+}
